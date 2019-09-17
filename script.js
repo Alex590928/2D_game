@@ -1,17 +1,17 @@
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext("2d");
-var ballRadius = 10;
-var posX = 20;
-var speedX = 5;
-var posY = 20;
-var speedY = 7;
+let canvas = document.getElementById('canvas'), 
+    ctx = canvas.getContext("2d"), 
+    ballRadius = 10, 
+    posX = 20,
+    speedX = 5,
+    posY = 20,
+    speedY = 7;
 
-var paddleHeight = 10;
-var paddleWidth = 75;
-var paddleX = ((canvas.width - paddleWidth) / 2);
+let paddleHeight = 10,
+    paddleWidth = 75,
+    paddleX = ((canvas.width - paddleWidth) / 2);
 
-var rightPressed = false;
-var leftPressed = false;
+let rightPressed = false,
+    leftPressed = false;
 
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
